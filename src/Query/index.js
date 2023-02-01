@@ -39,6 +39,11 @@ interface QueryCountProxy {
   ): Promise<U>;
 }
 
+/**
+ * @jsdoc
+ * Database provider to create the database context
+ * to allow child components to consume the database without prop drilling
+ */
 export default class Query<Record: Model> {
   // Used by withObservables to differentiate between object types
   static _wmelonTag: string = 'query'

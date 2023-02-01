@@ -59,6 +59,10 @@ export function columnName(name: string): ColumnName {
   return name
 }
 
+/**
+ * Database provider to create the database context
+ * to allow child components to consume the database without prop drilling
+ */
 export function appSchema({ version, tables: tableList, unsafeSql }: AppSchemaSpec): AppSchema {
   if (process.env.NODE_ENV !== 'production') {
     invariant(version > 0, `Schema version must be greater than 0`)

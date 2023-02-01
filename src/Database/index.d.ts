@@ -22,6 +22,15 @@ type DatabaseProps = $Exact<{
 
 export function setExperimentalAllowsFatalError(): void
 
+/**
+ * The main WatermelonDB database class
+ * @class Database
+ * @hideconstructor
+ * @example
+ * ```js
+ * import { Database } from '@nozbe/watermelondb'
+ * ```
+ */
 export default class Database {
   adapter: DatabaseAdapterCompat
 

@@ -88,6 +88,12 @@ const config = {
             label: 'Docs',
             docId: 'docs/README',
           },
+          {     
+            type: "doc",     
+            docId: "api/DatabaseProvider",      
+            label: "API",     
+            position: "left",
+          },
           {
             type: 'docsVersionDropdown',
             position: 'left',

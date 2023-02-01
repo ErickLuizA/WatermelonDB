@@ -51,6 +51,7 @@ const sidebars = {
         'docs/CHANGELOG',
       ],
     },
+    ...require("./sidebars-api"),
 }
 
 module.exports = sidebars
